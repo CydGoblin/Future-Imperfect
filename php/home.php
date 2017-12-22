@@ -18,7 +18,7 @@
           if( Text::isNotEmpty($User->firstName()) || Text::isNotEmpty($User->lastName()) ) {
             $author = $User->firstName().' '.$User->lastName();
            } ?>
-        <span class="category"><?php $Language->p('Category') ?>: <a href="'<?php HTML_PATH_ROOT.$Url->filters('category').'/'.$page->categoryKey() ?>'"><?php echo $page->category() ?></a></span>
+        <span class="category"><?php $Language->p('Category') ?>: <a href="<?php echo HTML_PATH_ROOT.$Url->filters('category').'/'.$page->categoryKey() ?>"><?php echo $page->category() ?></a></span>
         <span class="author name"><?php echo $author ?></span>
       </div>
     </header>
